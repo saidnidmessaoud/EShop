@@ -1,0 +1,72 @@
+﻿@model Order
+
+@{
+    ViewData["Title"] = "Order Information";
+}
+
+<form asp-action="Checkout" method="Post" class="form-horizontal" role="form">
+    <h2>The last step to complete the order</h2>
+
+    <div class="form-group">
+        <label asp-for="FirstName" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="bg-danger text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LastName" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="bg-danger text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Address" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="bg-danger text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="City" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="City" class="form-control" />
+            <span asp-validation-for="City" class="bg-danger text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ZipCode" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="ZipCode" class="form-control" />
+            <span asp-validation-for="ZipCode" class="bg-danger text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="col-md-2 control-label"></label>
+        <div class="col-md-5">
+            <input asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="bg-danger text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-5">
+            <input type="submit" class="btn btn-toolbar" value="Confirm Order" />
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+
+

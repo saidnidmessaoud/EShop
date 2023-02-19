@@ -1,0 +1,44 @@
+﻿@model ShoppingCartViewModel
+
+@{
+    ViewData["Title"] = "My Shopping Cart";
+}
+
+<h1>My Shopping Cart</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Selected Quantity</th>
+            <th>Laptop</th>
+            <th class="text-right">Price</th>
+            <th class="text-right">Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+        {
+            <tr>
+                <td class="text-left"><a asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-computerId="@item.Computer.ComputerId">Reduce the Quantity</a></td>
+                <td class="text-center">@item.Amount</td>
+                <td class="text-left">@item.Computer.Name</td>
+                <td class="text-right">@item.Computer.Price.ToString("c")</td>
+                <td class="text-right">
+                    @((item.Amount * item.Computer.Price).ToString("c"))
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4" class="text-right">Total</td>
+            <td class="text-right">@Model.ShoppingCartTotal.ToString("c")</td>
+        </tr>
+    </tfoot>
+</table>
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="ClearCart">Clear Cart</a>
+    <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Checkout</a>
+</div>

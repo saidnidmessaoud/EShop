@@ -1,0 +1,11 @@
+﻿@model ComputerListViewModel
+@{
+    ViewData["Title"] = "Laptops";
+}
+
+<h1>@Model.CurrentCategory</h1>
+@foreach (var computer in Model.Computers)
+{
+    <partial name="_ComputerCard" model="computer" />
+}
+

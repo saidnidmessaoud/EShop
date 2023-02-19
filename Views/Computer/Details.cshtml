@@ -1,0 +1,24 @@
+﻿@model Computer
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>@Model.Name</h1>
+<div class="thumbnail">
+    <img src="@Model.ImageUrl" alt="@Model.Name" />
+    <div class="caption-full">
+        <h3 class="pull-right">@Model.Price</h3>
+        <h3><a href="#">@Model.Name</a></h3>
+        <p>@Model.Description</p>
+    </div>
+    <div class="addToCart">
+        <p class="button">
+            <a asp-controller="ShoppingCart"
+               asp-action="AddToShoppingCart"
+               asp-route-computerId="@Model.ComputerId"
+               class="btn btn-primary">
+                Add to Cart
+            </a>
+        </p>
+    </div>
+</div>

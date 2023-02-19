@@ -1,0 +1,17 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<partial name="_Carousel" />
+
+<h2>Recommended</h2>
+
+<div class="row">
+
+    @foreach(var computer in Model.ComputerIsRecommend)
+    {
+        <partial name="_ComputerCard" model="computer" />
+    }
+
+</div>
