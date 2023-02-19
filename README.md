@@ -3,21 +3,21 @@ Home Page :
 
 ![1](https://user-images.githubusercontent.com/92686626/219920717-0651f98a-e3c9-43bf-be9a-9758b3d62ac3.PNG)
 
-Catigorie Pages :
-
-1/All Laptops :
+All Laptops Page:
 
 ![8](https://user-images.githubusercontent.com/92686626/219922008-50b53086-d6b7-474d-af38-42190a032a7e.PNG)
 
-2/ 2 in 1 Laptop
+Catigorie Pages :
+
+1/ 2 in 1 Laptop
 
 ![9](https://user-images.githubusercontent.com/92686626/219922038-a77339ef-4d77-4f97-853d-de849043ebf9.PNG)
 
-3/Daily Laptop
+2/ Daily Laptop
 
 ![10](https://user-images.githubusercontent.com/92686626/219922046-97986e3f-c568-475d-b72e-021ea7d4e351.PNG)
 
-4/Gaming Laptop
+3/ Gaming Laptop
 
 ![11](https://user-images.githubusercontent.com/92686626/219922054-2a63e7ff-533e-49d2-ae1a-950dda29fdd9.PNG)
 
